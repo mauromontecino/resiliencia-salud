@@ -15,8 +15,8 @@
 </head>
 
 <body>
-  <header>
-    <nav class="logoDesktop">
+  <header class="fixed-top">
+    <nav class="logoDesktop ">
       <div class="redesHeader d-flex justify-content-end">
         <div class="insta span">
           <a href="#">
@@ -36,7 +36,7 @@
         </div>
       </div>
     </nav>
-    <nav class="navbar navbar-expand-md navbar-dark" aria-label="Fourth navbar example">
+    <nav class="navbar navbar-expand-md navbar-dark " aria-label="Fourth navbar example">
       <div class="container-fluid d-flex">
         <img class=" logoDesktop" src="assets/img/logo resiliencia transparente.png" alt="" />
         <img class=" logoMobile" src="assets/img/logo resiliencia transparente.png" alt="" />
@@ -92,11 +92,22 @@
   </header>
   <main>
     <section>
-      <div class="heroContainer">
+      <div class="heroContainer logoDesktop">
         <div class="img"></div>
         <div class="img2"></div>
         <div class="heroBlur"></div>
         <div class="heroContainerText">
+          <h1>La salud es lo primero</h1>
+          <p>
+            Por eso en Resiliencia activa salud trabajamos mediante entrevista
+            previa, para poderte ofrecer el servicio más personalizado
+          </p>
+          <button>Reserva tu entrevista</button>
+        </div>
+      </div>
+      <div class="heroContainer logoMobile">
+        <img src="assets/img/heroimage.png" alt="">
+        <div class="heroContainerText2">
           <h1>La salud es lo primero</h1>
           <p>
             Por eso en Resiliencia activa salud trabajamos mediante entrevista
@@ -125,7 +136,7 @@
               titulación y amplia experiencia en el trato de pacientes.
             </p>
           </div>
-          <div class="features__card">
+          <div class="features__card mb-0">
             <img src="assets/img/insurance.png" alt="" class="img-fluid" />
             <figure>SERVICIO PERSONALIZADO</figure>
             <p>
@@ -241,7 +252,7 @@
     <section>
       <div class="reviews">
         <div class="reviews__text">
-          <h2 class="reviews__text__h2">Qué dicen nuestros clientes</h2>
+          <h2 class="reviews__text__h2">¿Qué dicen nuestros clientes?</h2>
           <h3 class="reviews__text__h3">
             Con cada testimonio crecemos y nos perfeccionamos. ¡Nos encanta
             escucharlos!
@@ -250,8 +261,9 @@
         <div class="reviews__card">
           <div class="reviews__card__element">
             <h3 class="reviews__card__element__comment">
-              “Sin duda el servicio de Resiliencia Activa es el mejor de la
-              zona! Lo elegiría siempre.”
+              “Sin duda el servicio de Resiliencia Activa es el mejor de la zona de Luján! Lo elegiría
+              siemprelkdcklnsdñjcñsdkvcñjsd ñvj sdñv sdñvñsd vñds vl dsñvj dsj vñjdsvñskdj vñkdjs vñkjs vñkdv ñkj dsvñ
+              dsjkvñdskjvn .”
             </h3>
             <div class="reviews__card__element__stars">
               <i class="fa-solid fa-star"></i>
@@ -264,23 +276,29 @@
               Servicio de pedadogía.
             </h4>
           </div>
-          <div class="reviews__card__element">
-            <h3 class="reviews__card__element__comment">
-              “Sin duda el servicio de Resiliencia Activa es el mejor de la
-              zona! Lo elegiría siempre.”
-            </h3>
-            <div class="reviews__card__element__stars">
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
+          <div id="flotante" style="display:none;">
+            <div class="reviews__card__element">
+              <h3 class="reviews__card__element__comment">
+                “Sin duda el servicio de Resiliencia Activa es el mejor de la zona de Luján! Lo elegiría
+                siemprelkdcklnsdñjcñsdkvcñjsd ñvj sdñv sdñvñsd vñds vl dsñvj dsj vñjdsvñskdj vñkdjs vñkjs vñkdv ñkj dsvñ
+                dsjkvñdskjvn .”
+              </h3>
+              <div class="reviews__card__element__stars">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+              <h2 class="reviews__card__element__name">Pedro Santos</h2>
+              <h4 class="reviews__card__element__service">
+                Servicio de kineseología para su madre Marta.
+              </h4>
             </div>
-            <h2 class="reviews__card__element__name">Pedro Santos</h2>
-            <h4 class="reviews__card__element__service">
-              Servicio de kineseología para su madre Marta.
-            </h4>
+            <div id="close"><a href="javascript:cerrar();">Ver menos</a></div>
           </div>
+          <p><a id="open" href="javascript:mostrar();">Ver más...</a></p>
         </div>
+      </div>
       </div>
     </section>
     <section class="director__container">
@@ -360,7 +378,7 @@
             contactarnos por los siguientes medios:
           </p>
         </div>
-        <div class="redesCont ">
+        <div class="redesCont text-start">
           <div class="insta">
             <i class="fa-brands fa-instagram"></i>
             <p>resiliencia_salud_at</p>
@@ -373,7 +391,7 @@
             <i class="fa-solid fa-phone-flip"></i>
             <p>11 67698647</p>
           </div>
-          <div class="mail">
+          <div class="mail text-break">
             <i class="fa-solid fa-envelope"></i>
             <p>resiliencia.activa@hotmail.com</p>
           </div>

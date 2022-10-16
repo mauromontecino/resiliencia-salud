@@ -74,3 +74,17 @@ class Swiper {
 
 let swiper = new Swiper(".slider-wrapper");
 swiper.initHandlers();
+
+function mostrar() {
+  div = document.getElementById("flotante");
+  div.style.display = "";
+  abrir = document.getElementById("open");
+  abrir.style.display = "none";
+}
+
+function cerrar() {
+  div = document.getElementById("flotante");
+  div.style.display = "none";
+  abrir = document.getElementById("open");
+  abrir.style.display = "";
+}
