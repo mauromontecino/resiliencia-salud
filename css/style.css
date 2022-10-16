@@ -475,8 +475,13 @@ footer h4 {
 }
 
 @media (max-width: 768px) {
+  header img {
+    width: 51px;
+    height: 54px;
+  }
   footer {
     background-color: #e2ffdf;
+    padding-top: 50px;
   }
   footer h4 {
     color: #228c40;
@@ -487,6 +492,7 @@ footer h4 {
   }
   footer .consultasTrat p {
     color: #000000;
+    margin-bottom: 30px;
   }
   .logoDesktop {
     display: none;
@@ -498,7 +504,10 @@ footer h4 {
     text-align: center;
   }
   .redesCont {
-    margin-left: 50px;
+    margin-left: 70px;
+  }
+  .redesCont i {
+    font-size: 18px;
   }
   .redesCont p {
     font-size: 12px;
@@ -532,6 +541,7 @@ footer h4 {
   .director__card {
     padding: 25px;
     width: 90%;
+    margin-bottom: 3em;
   }
   .director__title {
     text-align: center;
@@ -612,6 +622,7 @@ footer h4 {
   }
   .heroContainer img {
     width: 100%;
+    margin-top: 50px;
   }
   .heroContainerText2 {
     width: 100%;
