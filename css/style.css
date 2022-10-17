@@ -26,11 +26,15 @@ main {
   padding-left: 52px;
 }
 .redesHeader i {
-  font-size: 20px;
+  font-size: 24px;
 }
 
 .redesHeaderMobile a {
   color: #3a8532;
+}
+
+.redesHeader i:hover {
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.35);
 }
 
 /*NavBar bootstrap*/
@@ -54,12 +58,12 @@ nav img {
 .nav-link {
   color: #228c40;
   font-family: "Poppins", sans-serif;
+  font-size: 20px;
 }
 
 .nav-link:hover {
-  background-color: #b7feaf;
+  text-shadow: 0px 4px 5px rgba(34, 140, 64, 0.25);
   color: #228c40;
-  border-radius: 30px;
 }
 
 header img {
@@ -79,6 +83,7 @@ header img {
   border-radius: 16px;
   border: none;
   font-family: "Poppins", sans-serif;
+  text-transform: uppercase;
 }
 
 .navbar-toggler:focus {
@@ -182,10 +187,6 @@ header img {
   overflow: hidden;
   padding: 0 10px;
   transition: all 0.3s;
-}
-
-.features__card:hover {
-  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
 }
 
 .features__card {
@@ -322,6 +323,8 @@ header img {
   border-radius: 16px;
   border: none;
   box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.4);
+  text-transform: uppercase;
+  font-size: 20px;
 }
 
 /*Reviews*/
@@ -657,6 +660,9 @@ footer h4 {
   .card {
     margin-top: -80px;
   }
+  .sendcv__button {
+    font-size: 16px;
+  }
 }
 
 @media (min-width: 769px) {
@@ -727,4 +733,8 @@ footer h4 {
 
 div#close {
   text-align: center;
+}
+
+button:hover {
+  box-shadow: 3px 5px 16px rgba(0, 0, 0, 0.5);
 }
