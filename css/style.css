@@ -132,7 +132,7 @@ header img {
 .heroContainer .img {
   width: 100%;
   height: 850px;
-  background-image: url(../assets/img/heroimage.png);
+  background-image: url(/assets/img/hero_image1.0.webp);
   background-repeat: no-repeat;
   background-size: 1440px 1000px;
   background-position-x: 250px;
@@ -209,29 +209,6 @@ header img {
   max-width: 177px;
 }
 
-/*Services Card*/
-
-.services {
-  display: flex;
-}
-
-.services__h1 {
-  font-size: 55px;
-}
-
-.services__card {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  margin: 4rem 1rem;
-  background-color: #fff;
-  overflow: hidden;
-  padding: 0 10px;
-  box-shadow: 2px 4px 7px rgba(0, 0, 0, 0.25);
-  border-radius: 42px;
-  transition: all 0.3s;
-}
-
 /*Mod bootstrap*/
 .card {
   background-color: #edfeeb;
@@ -296,7 +273,8 @@ header img {
 
 .services__card figure {
   text-align: center;
-  margin-top: 4rem;
+  color: #228c40;
+  margin-top: 10px;
   font-weight: bolder;
   font-size: 1.7rem;
 }
@@ -310,6 +288,39 @@ header img {
   max-width: 1200px;
   width: 90%;
   margin: auto;
+}
+
+.services__h1 {
+  font-size: 54px;
+  margin-top: 100px;
+}
+
+.services__h3 {
+  font-size: 20px;
+}
+
+.services__card.glider-slide {
+  height: 483px !important;
+  width: 393px !important;
+  align-items: center;
+}
+.services__card.glider-slide img {
+  width: 230px;
+}
+
+@media screen and (max-width: 800px) {
+  .services__card {
+    width: 18% !important;
+  }
+  .services__card figure {
+    margin: 0;
+    font-weight: 600;
+  }
+  .services__card img {
+    display: flex;
+    width: 200px;
+    margin: 0 auto;
+  }
 }
 
 /* --- --- CONTENEDOR PRINCIPAL --- --- */
@@ -355,7 +366,8 @@ header img {
   text-align: center;
 }
 
-.carousel__indicadores .glider-dot {
+.carousel__indicadores .glider-dot,
+.reviews__indicadores .glider-dot {
   display: block;
   width: 30px;
   height: 4px;
@@ -364,11 +376,13 @@ header img {
   background-color: #115e08;
 }
 
-.carousel__indicadores .glider-dot:hover {
+.carousel__indicadores .glider-dot:hover,
+.reviews__indicadores .glider-dot:hover {
   opacity: 0.5;
 }
 
-.carousel__indicadores .glider-dot.active {
+.carousel__indicadores .glider-dot.active,
+.reviews__indicadores .glider-dot.active {
   opacity: 1;
 }
 
@@ -424,6 +438,7 @@ header img {
   box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.4);
   text-transform: uppercase;
   font-size: 20px;
+  font-weight: 500;
 }
 
 /*Reviews*/
@@ -774,11 +789,52 @@ footer h4 {
     font-size: 12px;
     padding-bottom: 24px;
   }
+  .reviews__card__element__comment {
+    font-size: 14px;
+  }
+  .reviews__card__element__name {
+    font-size: 16px;
+  }
+  .reviews__card__element__service {
+    font-size: 10px;
+  }
+  .services__card.glider-slide {
+    height: 294px !important;
+    width: 231px !important;
+    align-items: center;
+    margin-top: 0;
+  }
+  .services__card.glider-slide img {
+    width: 140px;
+  }
+  .services__card p {
+    font-size: 14px;
+    margin: 6px 6px;
+  }
+  .services__card figure {
+    font-size: 20px;
+  }
 }
 
 @media (min-width: 769px) {
   .logoMobile {
     display: none;
+  }
+  .reviews__card__element {
+    width: 640px !important;
+    margin: 64px 0px 64px 64px;
+  }
+  .reviews__card__element__comment {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  .reviews__card__element__name {
+    font-size: 20px;
+    margin-top: 16px;
+  }
+  .reviews__card__element__service {
+    font-size: 12px;
+    margin-top: 16px;
   }
 }
 
