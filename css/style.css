@@ -198,6 +198,7 @@ header img {
   line-height: 120%;
   font-size: 24px;
   text-align: center;
+  overflow-wrap: normal;
 }
 
 .features__card p {
@@ -228,7 +229,7 @@ header img {
 }
 
 .card__quienesSomos {
-  border-radius: 48px 0 0 48px;
+  border-radius: 48px 0 0 48px !important;
 }
 
 .card__quienesSomos__text {
@@ -240,6 +241,7 @@ header img {
   color: #228c40;
   text-align: center;
   font-size: 55px;
+  margin-bottom: 40px;
 }
 
 .card__quienesSomos__text ul li::marker {
@@ -273,7 +275,6 @@ header img {
 
 .services__card figure {
   text-align: center;
-  color: #228c40;
   margin-top: 10px;
   font-weight: bolder;
   font-size: 1.7rem;
@@ -473,7 +474,7 @@ header img {
   justify-content: center;
   background-color: #fff;
   margin: 6rem;
-  padding: 4rem 4rem;
+  padding: 3rem 3rem;
   border-radius: 2rem;
   box-shadow: 2px 4px 14px rgba(0, 0, 0, 0.35);
 }
@@ -515,7 +516,7 @@ header img {
   margin: 0 auto;
   color: #228c40;
   font-size: 54px;
-  font-weight: 600;
+  font-weight: 500;
   text-align: center;
 }
 
@@ -538,10 +539,12 @@ footer {
   width: 100%;
   background: #b7feaf;
   padding-top: 80px;
+  padding-bottom: 10px;
 }
 
 footer p {
   font-size: 20px;
+  margin-bottom: 30px;
 }
 
 footer i {
@@ -822,11 +825,11 @@ footer h4 {
   }
   .reviews__card__element {
     width: 640px !important;
-    margin: 64px 0px 64px 64px;
+    margin: 10px 0px 15px 60px;
   }
   .reviews__card__element__comment {
     font-size: 20px;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
   }
   .reviews__card__element__name {
     font-size: 20px;
