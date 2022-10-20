@@ -160,6 +160,7 @@ nav img {
   font-weight: 500;
   font-size: 20px;
   border: none;
+  box-shadow: 2px 2px 6px rgb(0 0 0 / 30%);
 }
 
 .heroBlur {
@@ -518,6 +519,7 @@ nav img {
   display: flex;
   align-content: center;
   align-items: center;
+  padding: 36px 70px 36px 70px;
 }
 
 .director__title {
@@ -534,6 +536,7 @@ nav img {
   font-weight: 400;
   color: #228c40;
   margin-bottom: 1rem;
+  text-align: center;
 }
 
 .director__card__text__description {
@@ -694,6 +697,9 @@ footer h4 {
   .director__card__text {
     margin: 0;
   }
+  .director__card__text__center {
+    padding: 10px;
+  }
   .reviews__card__element {
     margin: 1rem;
     padding: 1rem;
@@ -850,7 +856,7 @@ footer h4 {
   }
   .reviews__card__element__name {
     font-size: 20px;
-    margin-top: 16px;
+    margin-top: 10px;
   }
   .reviews__card__element__service {
     font-size: 12px;
@@ -925,4 +931,8 @@ div#close {
 
 button:hover {
   box-shadow: 3px 5px 16px rgba(0, 0, 0, 0.5);
+}
+
+.glider-track {
+  width: 2200px !important;
 }
