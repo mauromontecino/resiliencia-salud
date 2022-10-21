@@ -53,6 +53,9 @@ header img:hover {
 }
 
 /*NavBar bootstrap*/
+.navbar-collapse ul {
+  padding: 0;
+}
 
 nav {
   background-color: #edfeeb;
@@ -315,9 +318,11 @@ nav img {
   height: 483px !important;
   width: 393px !important;
   align-items: center;
+  justify-content: normal;
 }
 .services__card.glider-slide img {
   width: 230px;
+  margin-top: 10px;
 }
 
 @media screen and (max-width: 800px) {
@@ -345,6 +350,7 @@ nav img {
 .carousel__anterior,
 .carousel__siguiente {
   display: block;
+  position: absolute;
   width: 30px;
   height: 30px;
   border: none;
@@ -353,13 +359,13 @@ nav img {
   line-height: 30px;
   text-align: center;
   background: none;
-  color: #fff;
-  opacity: 20%;
+  color: #000;
 }
 
 .carousel__anterior:hover,
 .carousel__siguiente:hover {
   opacity: 100%;
+  border-radius: 50%;
 }
 
 .carousel__anterior {
@@ -768,6 +774,7 @@ footer h4 {
   }
   .card__quienesSomos__text ul li p {
     font-size: 14px;
+    margin-bottom: 0;
   }
   .heroContainer img {
     width: 100%;
@@ -822,6 +829,7 @@ footer h4 {
   }
   .reviews__card__element__comment {
     font-size: 14px;
+    font-style: italic;
   }
   .reviews__card__element__name {
     font-size: 16px;
@@ -856,8 +864,9 @@ footer h4 {
     margin: 10px 0px 15px 15px;
   }
   .reviews__card__element__comment {
-    font-size: 20px;
+    font-size: 18px;
     margin-bottom: 20px;
+    font-style: italic;
   }
   .reviews__card__element__name {
     font-size: 20px;
@@ -944,4 +953,8 @@ button:hover {
 
 .glider-dots {
   display: none !important;
+}
+
+#reviewFirst {
+  margin-left: 80px;
 }
