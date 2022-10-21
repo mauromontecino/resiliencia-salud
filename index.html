@@ -255,44 +255,78 @@
       <div class="contenedor">
         <div class="carousel">
           <div class="carousel__contenedor">
-            <button aria-label="Anterior" class="carousel__anterior">
-            </button>
-            <div class="carousel__lista">
-              <div class="services__card">
-                <img src="assets/img/heart-rate 1.png" alt="" class="img-fluid">
-                <figure>CUIDADORES</figure>
-                <p>Brindamos cuidadores personalizados a adultos mayores y personas con algún tipo de discapacidad.</p>
+            <div id="carouselExampleControls" class="carousel slide">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <div class="text-align-center carrouselImg services__card">
+                    <img src="assets/img/heart-rate 1.png" alt="..."><br>
+                    <div class="card-body">
+                      <h5 class="card-title">CUIDADORES</h5>
+                      <p class="card-text">Brindamos cuidadores personalizados a adultos mayores y personas con algún
+                        tipo de discapacidad.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="text-align-center carrouselImg services__card">
+                    <img src="assets/img/blood-pressure-gauge.png" alt="..."><br>
+                    <div class="card-body">
+                      <h5 class="card-title">ACOMPAÑANTES</h5>
+                      <p class="card-text">Contamos con acompañantes terapéuticos con formación en salud mental, que
+                        trabajan bajo la
+                        supervisión
+                        de profesionales con amplia formación en salud.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="text-align-center carrouselImg services__card">
+                    <img src="assets/img/medical-tools.png" alt="..."><br>
+                    <div class="card-body">
+                      <h5 class="card-title">ENFERMEROS</h5>
+                      <p class="card-text">Servicio de enfermería a domicilio con la asistencia profesional de
+                        enfermeros con amplia experiencia
+                        brindando servicios en higiene y confort del paciente.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="text-align-center carrouselImg services__card">
+                    <img src="assets/img/x-ray.png" alt="...">
+                    <br>
+                    <div class="card-body">
+                      <h5 class="card-title">PSICÓLOGOS</h5>
+                      <p class="card-text">Brindamos profesionales especializados en la salud mental, con el fin de
+                        promover y facilitar el
+                        bienestar psíquico, físico y social de las personas.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="text-align-center carrouselImg services__card">
+                    <img src="assets/img/hospital.png" alt="...">
+                    <br>
+                    <div class="card-body">
+                      <h5 class="card-title">KINESIÓLOGOS</h5>
+                      <p class="card-text">Nos basamos en la rehabilitación funcional para la prevención y tratamiento
+                        de lesiones o patologías
+                        que afecten la funcionalidad del sistema esquelético y muscular.</p>
+                    </div>
+                  </div>
+                </div>
               </div>
-              <div class="services__card">
-                <img src="assets/img/blood-pressure-gauge.png" alt="" class="img-fluid">
-                <figure>ACOMPAÑANTES</figure>
-                <p>Contamos con acompañantes terapéuticos con formación en salud mental, que trabajan bajo la
-                  supervisión
-                  de profesionales con amplia formación en salud.</p>
-              </div>
-              <div class="services__card">
-                <img src="assets/img/medical-tools.png" alt="" class="img-fluid">
-                <figure>ENFERMEROS</figure>
-                <p>Servicio de enfermería a domicilio con la asistencia profesional de enfermeros con amplia experiencia
-                  brindando servicios en higiene y confort del paciente.</p>
-              </div>
-              <div class="services__card">
-                <img src="assets/img/x-ray.png" alt="" class="img-fluid">
-                <figure>PSICÓLOGOS</figure>
-                <p>Brindamos profesionales especializados en la salud mental, con el fin de promover y facilitar el
-                  bienestar psíquico, físico y social de las personas.</p>
-              </div>
-              <div class="services__card">
-                <img src="assets/img/hospital.png" alt="" class="img-fluid">
-                <figure>KINESIÓLOGOS</figure>
-                <p>Nos basamos en la rehabilitación funcional para la prevención y tratamiento de lesiones o patologías
-                  que afecten la funcionalidad del sistema esquelético y muscular.</p>
-              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
             </div>
           </div>
-          <button aria-label="Siguiente" class="carousel__siguiente">
-            <i class="fas fa-chevron-right"></i>
-          </button>
         </div>
         <div role="tablist" class="carousel__indicadores"></div>
       </div>

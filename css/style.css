@@ -326,9 +326,6 @@ nav img {
 }
 
 @media screen and (max-width: 800px) {
-  .services__card {
-    width: 18% !important;
-  }
   .services__card figure {
     margin: 0;
     font-weight: 600;
@@ -776,6 +773,15 @@ footer h4 {
     font-size: 14px;
     margin-bottom: 0;
   }
+  .card {
+    text-align: center;
+  }
+  .carrouselImg img {
+    width: 140px;
+    margin-left: auto;
+    margin-top: 20px;
+    margin-right: auto;
+  }
   .heroContainer img {
     width: 100%;
     margin-top: 10px;
@@ -837,14 +843,11 @@ footer h4 {
   .reviews__card__element__service {
     font-size: 10px;
   }
-  .services__card.glider-slide {
-    height: 294px !important;
+  .services__card {
+    height: 400px !important;
     width: 231px !important;
     align-items: center;
-    margin-top: 0;
-  }
-  .services__card.glider-slide img {
-    width: 140px;
+    margin-top: 50px;
   }
   .services__card p {
     font-size: 14px;
@@ -852,6 +855,45 @@ footer h4 {
   }
   .services__card figure {
     font-size: 20px;
+  }
+  .card-body h5 {
+    font-size: 20px;
+  }
+  .slide {
+    width: auto !important;
+    min-height: 350px !important;
+  }
+  .carousel-item-next,
+  .carousel-item-prev,
+  .carousel-item.active {
+    display: flex;
+  }
+  .carousel-item {
+    flex-direction: column-reverse;
+    text-align: center;
+    align-items: center;
+    align-self: center;
+    align-content: center;
+  }
+  .carousel-control-next,
+  .carousel-control-prev {
+    border-radius: 50%;
+    height: 50px;
+    top: 220px;
+    display: block;
+    position: absolute;
+    border: none;
+    background: rgb(0 0 0 / 0.2);
+  }
+  .carousel-control-next:hover,
+  .carousel-control-prev:hover {
+    border-radius: 50%;
+    height: 50px;
+    top: 220px;
+    display: block;
+    position: absolute;
+    border: none;
+    background: rgb(0 0 0 / 0.2);
   }
 }
 
